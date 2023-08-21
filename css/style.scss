@@ -1,0 +1,142 @@
+@import url(http://fonts.googleapis.com/earlyaccess/notosansjp.css);
+
+/*—————————————————————————————————————————————————————————————————————————————————————————————————————
+ResetCSS
+—————————————————————————————————————————————————————————————————————————————————————————————————————*/
+/*
+  Josh's Custom CSS Reset
+  https://www.joshwcomeau.com/css/custom-css-reset/
+*/
+*,
+*::before,
+*::after {
+    box-sizing: border-box;
+}
+
+* {
+    margin: 0;
+}
+
+html,
+body {
+    height: 100%;
+}
+
+body {
+    line-height: 1.7;
+    -webkit-font-smoothing: antialiased;
+}
+
+img,
+picture,
+video,
+canvas,
+svg {
+    display: block;
+    max-width: 100%;
+}
+
+input,
+button,
+textarea,
+select {
+    font: inherit;
+}
+
+p,
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+    overflow-wrap: break-word;
+}
+
+#root,
+#__next {
+    isolation: isolate;
+}
+
+/*
+  Josh's Custom CSS Reset end
+*/
+
+/*—————————————————————————————————————————————————————————————————————————————————————————————————————
+フォント設定
+—————————————————————————————————————————————————————————————————————————————————————————————————————*/
+.notosans {
+    font-family: 'Noto Sans JP', sans-serif;
+    font-weight: bold;
+}
+
+.hiragino-mincho {
+    font-family: 'Hiragino Mincho ProN','ヒラギノ明朝 ProN','Hiragino Mincho Pro','ヒラギノ明朝 Pro', serif;
+}
+
+.helvetica {
+    font-family: "Helvetica Neue", "Helvetica", "Hiragino Sans", "Hiragino Kaku Gothic ProN", "Arial", "Yu Gothic", "Meiryo", sans-serif;
+}
+
+/*—————————————————————————————————————————————————————————————————————————————————————————————————————
+IOS対応
+—————————————————————————————————————————————————————————————————————————————————————————————————————*/
+
+// iOSのフォーム要素の独自装飾をリセット
+input,
+button,
+textarea,
+select {
+    -webkit-appearance: none;
+    appearance: none;
+}
+
+// スマホ横向き時のフォントサイズの拡大を禁止
+body {
+    -webkit-text-size-adjust: 100%;
+    text-size-adjust: 100%;
+}
+
+/*—————————————————————————————————————————————————————————————————————————————————————————————————————
+基本CSS
+—————————————————————————————————————————————————————————————————————————————————————————————————————*/
+
+@mixin pc {
+    @media (min-width: 769px) {
+        @content;
+    }
+}
+
+@mixin sp {
+    @media (max-width: 768px) {
+        @content;
+    }
+}
+
+section {
+    overflow: hidden;
+}
+
+li {
+    list-style-type: none;
+}
+
+/*————————————————————————————————————————————————————————
+レスポンシブ表示非表示切り替え
+—————————————————————————————————————————————————————————————————————————————*/
+
+.pc {
+    @include sp {
+        display: none;
+    }
+}
+
+.sp {
+    @include pc {
+        display: none;
+    }
+}
+
+/*—————————————————————————————————————————————————————————————————————————————————————————————————————
+本体のCSS
+—————————————————————————————————————————————————————————————————————————————————————————————————————*/
