@@ -12,7 +12,7 @@
 
 <body>
     <header>
-        <div class="header_inner">            
+        <div class="header_inner">
             <a class="sp" href="#">
                 <img class="logo_sp" src="img/logo_sp.png" alt="">
             </a>
@@ -29,8 +29,25 @@
         <img src="" alt="">
     </section>
 
-    <section>
-        <img src="" alt="">
+    <section id="faq">
+        <p class="hiragino-mincho faq_text_01">FAQ</p>
+        <p class="notosans faq_text_02">よくある質問</p>
+        <details class="accordion-001">
+            <summary>リースやレンタルは出来ますか？</summary>
+            <p>大丈夫です。ご相談ください。</p>
+        </details>
+        <details class="accordion-001">
+            <summary>空冷式に比べて手間や人件費がかかると聞きました</summary>
+            <p>自動商品搬入搬出システムがありますので、省人化が出来ます。</p>
+        </details>
+        <details class="accordion-001">
+            <summary>空冷式と比べた電気代、消耗品代、人件費について</summary>
+            <p>空冷式に比べて8倍の速さで凍結しますので、投資コストは八分の１、ランニングコストは空冷式に比べて単位生産量当たり約半額になります。機材費用に対する生産量、工場スペースも最小になります。</p>
+        </details>
+        <details class="accordion-001">
+            <summary>他の凍結機に比べて解凍時の品質が知りたい</summary>
+            <p>世界最速で凍結しますので、世界最高の解凍時品質になります。</p>
+        </details>
     </section>
 
     <section id="contact">

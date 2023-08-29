@@ -167,6 +167,7 @@ header {
     position: fixed;
     width: 100%;
     box-shadow: 0 3px 14px rgba(255, 255, 255, 0.4);
+    z-index: 999;
 
     @include sp {
         height: 59px;
@@ -214,6 +215,102 @@ header {
 
     @media (max-width: 980px) {
         padding-top: 59px;
+    }
+}
+
+#faq {
+    max-width: 960px;
+    margin: 100px auto 150px;
+
+    @include sp {
+        margin: 40px auto 60px;
+        
+    }
+
+    @media (max-width: 960px) {
+        padding: 0 20px;
+    }
+
+    .faq_text_01 {
+        display: inline-block;
+        color: #105C8D;
+    }
+
+    .faq_text_02 {
+        display: inline-block;
+        color: #105C8D;
+        margin-left: 27px;
+        margin-bottom: 25px;
+    }
+
+    .accordion-001 {
+        max-width: 960px;
+        margin-bottom: 20px;
+        background-color: #ffffff;
+        border-top: 1px solid #105C8D;
+        border-bottom: 1px solid #105C8D;
+
+        summary {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            position: relative;
+            padding: 1em 2em;
+            background-color: #F2FAFF;
+            color: #000000;
+            font-weight: 600;
+            cursor: pointer;
+        }
+
+        summary::-webkit-details-marker {
+            display: none;
+        }
+
+        summary::-webkit-details-marker {
+            display: none;
+        }
+
+        summary::before,
+        summary::after {
+            width: 2px;
+            height: .9em;
+            background-color: #105C8D;
+            content: '';
+            margin-left: 10px;
+        }
+
+        summary::before {
+            position: absolute;
+            right: 2em;
+            rotate: 90deg;
+        }
+
+        summary::after {
+            transition: rotate .3s;
+        }
+    }
+
+    .accordion-001:not([open]) {
+        border-top: 1px solid #105C8D;
+        border-bottom: 1px solid #105C8D;
+    }
+
+    .accordion-001[open] summary::after {
+        rotate: 90deg;
+    }
+
+    .accordion-001 p {
+        transform: translateY(-10px);
+        opacity: 0;
+        margin: 0;
+        padding: 1em 2em;
+        color: #333333;
+        transition: transform .5s, opacity .5s;
+    }
+
+    .accordion-001[open] p {
+        transform: none;
+        opacity: 1;
     }
 }
 
@@ -310,6 +407,19 @@ header {
                     background-color: #e7e7e7;
                     line-height: 1.5;
                     text-align: left;
+                }
+
+                .privacypolicy::-webkit-scrollbar {
+                    width: 10px;
+                }
+
+                .privacypolicy::-webkit-scrollbar-track {
+                    background: #f6f6f6;
+                }
+
+                .privacypolicy::-webkit-scrollbar-thumb {
+                    background: #747373;
+                    border-radius: 5px;
                 }
             }
 

@@ -123,9 +123,6 @@
             flex-direction: column;
             justify-content: center;
             align-items: center;
-            /* margin-top: 40%; */
-            /* position: absolute;
-            bottom: 0; */
             width: 100%;
         }
         footer .copyright {
