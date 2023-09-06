@@ -33,6 +33,14 @@
         </a>
     </section>
 
+    <section id="cta">
+        <img class="pc" src="img/cta_pc.jpg" alt="">
+        <img class="sp" src="img/cta_sp.jpg" alt="">
+        <a href="#contact">
+            <img class="cta_btn" src="img/cta_btn.png" alt="">
+        </a>
+    </section>
+
     <section id="faq">
         <p class="hiragino-mincho faq_text_01">FAQ</p>
         <p class="notosans faq_text_02">よくある質問</p>

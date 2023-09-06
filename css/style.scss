@@ -244,6 +244,30 @@ header {
     }
 }
 
+#cta {
+    position: relative;
+
+    .cta_btn {
+        width: 29%;
+        position: absolute;
+        top: 60%;
+        left: 34%;
+        transition: .3s;
+
+        @include sp {
+            width: 75%;
+            position: absolute;
+            top: 57%;
+            left: 13%;
+        }
+    }
+
+    .cta_btn:hover {
+        box-shadow: 0 15px 30px -5px rgba(0, 0, 0, .15), 0 0 5px rgba(0, 0, 0, .1);
+        transform: translateY(-4px);
+    }
+}
+
 #faq {
     max-width: 960px;
     margin: 100px auto 150px;
