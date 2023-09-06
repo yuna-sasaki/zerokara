@@ -171,27 +171,51 @@ header .header_inner .logo_pc {
 header .header_inner .logo_sp {
   height: 59px;
 }
+header .header_inner .logo_pc:hover,
+header .header_inner .logo_sp:hover {
+  opacity: 0.5;
+}
 header .header_inner .cta_btn_head {
   width: 254px;
+  transition: 0.3s;
 }
 @media (max-width: 768px) {
   header .header_inner .cta_btn_head {
     width: 176px;
   }
 }
-header .header_inner .logo_pc:hover,
-header .header_inner .logo_sp:hover,
 header .header_inner .cta_btn_head:hover {
-  opacity: 0.5;
+  box-shadow: 0 15px 30px -5px rgba(0, 0, 0, 0.15), 0 0 5px rgba(0, 0, 0, 0.1);
+  transform: translateY(-4px);
 }
 
 #fv {
   padding-top: 75px;
+  position: relative;
 }
 @media (max-width: 980px) {
   #fv {
     padding-top: 59px;
   }
+}
+#fv .cta_btn {
+  width: 29%;
+  position: absolute;
+  top: 73%;
+  left: 17%;
+  transition: 0.3s;
+}
+@media (max-width: 768px) {
+  #fv .cta_btn {
+    width: 75%;
+    position: absolute;
+    top: 85%;
+    left: 12%;
+  }
+}
+#fv .cta_btn:hover {
+  box-shadow: 0 15px 30px -5px rgba(0, 0, 0, 0.15), 0 0 5px rgba(0, 0, 0, 0.1);
+  transform: translateY(-4px);
 }
 
 #faq {
@@ -454,9 +478,10 @@ header .header_inner .cta_btn_head:hover {
   border: none;
   width: 188px;
   margin: 60px auto;
+  transition: 0.3s;
 }
 #contact .contact_inner form .submit_btn:hover {
-  opacity: 0.5;
+  transform: translateY(-4px);
 }
 
 footer {

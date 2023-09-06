@@ -194,27 +194,53 @@ header {
             height: 59px;
         }
 
+        .logo_pc:hover,
+        .logo_sp:hover {
+            opacity: 0.5;
+        }
+
         .cta_btn_head {
             width: 254px;
+            transition: .3s;
 
             @include sp {
                 width: 176px;
             }
         }
 
-        .logo_pc:hover,
-        .logo_sp:hover,
         .cta_btn_head:hover {
-            opacity: 0.5;
+            box-shadow: 0 15px 30px -5px rgba(0, 0, 0, .15), 0 0 5px rgba(0, 0, 0, .1);
+            transform: translateY(-4px);
         }
     }
 }
 
 #fv {
     padding-top: 75px;
+    position: relative;
 
     @media (max-width: 980px) {
         padding-top: 59px;
+    }
+
+    .cta_btn {
+        width: 29%;
+        position: absolute;
+        top: 73%;
+        left: 17%;
+        transition: .3s;
+
+        @include sp {
+            width: 75%;
+            position: absolute;
+            top: 85%;
+            left: 12%;
+        }
+    }
+
+    .cta_btn:hover {
+        box-shadow: 0 15px 30px -5px rgba(0, 0, 0, .15), 0 0 5px rgba(0, 0, 0, .1);
+        transform: translateY(-4px);
     }
 }
 
@@ -224,7 +250,7 @@ header {
 
     @include sp {
         margin: 40px auto 60px;
-        
+
     }
 
     @media (max-width: 960px) {
@@ -516,10 +542,11 @@ header {
                 border: none;
                 width: 188px;
                 margin: 60px auto;
+                transition: .3s;
             }
 
             .submit_btn:hover {
-                opacity: 0.5;
+                transform: translateY(-4px);
             }
         }
     }

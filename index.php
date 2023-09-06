@@ -26,7 +26,11 @@
     </header>
 
     <section id="fv">
-        <img src="" alt="">
+        <img class="pc" src="img/fv_pc.jpg" alt="">
+        <img class="sp" src="img/fv_sp.jpg" alt="">
+        <a href="#contact">
+            <img class="cta_btn" src="img/cta_btn.png" alt="">
+        </a>
     </section>
 
     <section id="faq">
