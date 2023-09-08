@@ -33,12 +33,100 @@
         </a>
     </section>
 
+    <section id="problem">
+        <img class="pc" src="img/problem_pc.png" alt="">
+        <img class="sp" src="img/problem_sp.png" alt="">
+    </section>
+
+    <section id="four_point">
+        <img class="pc" src="img/four_point_pc.jpg" alt="">
+        <img class="sp" src="img/four_point_sp.jpg" alt="">
+    </section>
+
+    <section>
+        <img class="pc" src="img/point1_1_pc.jpg" alt="">
+        <img class="sp" src="img/point1_1_sp.jpg" alt="">
+
+        <img class="pc" src="img/point1_2_pc.jpg" alt="">
+        <img class="sp" src="img/point1_2_sp.jpg" alt="">
+    </section>
+
+    <section>
+        <img class="pc" src="img/point2_1_pc.jpg" alt="">
+        <img class="sp" src="img/point2_1_sp.jpg" alt="">
+
+        <img class="pc" src="img/point2_2_pc.jpg" alt="">
+        <img class="sp" src="img/point2_2_sp.jpg" alt="">
+    </section>
+
+    <section id="point3">
+        <img class="pc" src="img/point3_1_pc.jpg" alt="">
+        <img class="sp" src="img/point3_1_sp.jpg" alt="">
+
+        <img class="pc" src="img/point3_2_pc.jpg" alt="">
+        <img class="sp" src="img/point3_2_sp.jpg" alt="">
+
+        <img class="pc" src="img/point3_3_pc.jpg" alt="">
+        <img class="sp" src="img/point3_3_sp.jpg" alt="">
+
+        <details class="accordion pc">
+            <summary>商品特徴を詳しく見る</summary>
+            <img src="img/point3_accordion_bottom_pc.jpg" alt="">
+        </details>
+        <details class="accordion sp">
+            <summary>商品特徴を詳しく見る</summary>
+            <img src="img/point3_accordion_bottom_sp.jpg" alt="">
+        </details>
+    </section>
+
+    <section>
+        <img class="pc" src="img/point4_pc.jpg" alt="">
+        <img class="sp" src="img/point4_sp.jpg" alt="">
+    </section>
+
     <section id="cta">
         <img class="pc" src="img/cta_pc.jpg" alt="">
         <img class="sp" src="img/cta_sp.jpg" alt="">
         <a href="#contact">
             <img class="cta_btn" src="img/cta_btn.png" alt="">
         </a>
+    </section>
+
+    <section>
+        <img class="pc" src="img/caseStudy_top_pc.jpg" alt="">
+        <img class="sp" src="img/caseStudy_top_sp.jpg" alt="">
+
+        <img class="pc" src="img/caseStudy_1_pc.jpg" alt="">
+        <img class="sp" src="img/caseStudy_1_sp.jpg" alt="">
+
+        <img class="pc" src="img/caseStudy_2_pc.jpg" alt="">
+        <img class="sp" src="img/caseStudy_2_sp.jpg" alt="">
+
+        <img class="pc" src="img/caseStudy_3_pc.jpg" alt="">
+        <img class="sp" src="img/caseStudy_3_sp.jpg" alt="">
+    </section>
+
+    <section>
+        <img class="pc" src="img/test_kitchen_pc.jpg" alt="">
+        <img class="sp" src="img/test_kitchen_sp.jpg" alt="">
+    </section>
+
+    <section>
+        <img class="pc" src="img/about_pc.jpg" alt="">
+        <img class="sp" src="img/about_sp.jpg" alt="">
+    </section>
+
+    <section id="cta">
+        <img class="pc" src="img/cta_pc.jpg" alt="">
+        <img class="sp" src="img/cta_sp.jpg" alt="">
+        <a href="#contact">
+            <img class="cta_btn" src="img/cta_btn.png" alt="">
+        </a>
+    </section>
+
+    <section>
+        <img class="pc" src="img/" alt="">
+        <img class="sp" src="img/" alt="">
     </section>
 
     <section id="faq">
@@ -157,6 +245,14 @@
     <footer>
         <p class="notosans copyright">© ZEROKARA CO.,LTD. All rights reserved.</p>
     </footer>
+
+    <script>
+        document.querySelectorAll('.accordion').forEach(function(elem) {
+            elem.querySelector('summary').addEventListener('click', function() {
+                elem.classList.toggle('open');
+            })
+        })
+    </script>
 
 </body>
 

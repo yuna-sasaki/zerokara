@@ -218,6 +218,79 @@ header .header_inner .cta_btn_head:hover {
   transform: translateY(-4px);
 }
 
+#problem {
+  position: relative;
+  z-index: 2;
+}
+
+#four_point {
+  transform: translateY(-5%);
+}
+@media (max-width: 768px) {
+  #four_point {
+    transform: translateY(-7%);
+  }
+}
+
+#point3 .accordion {
+  width: 81%;
+  margin: 70px auto 140px;
+  position: relative;
+}
+@media (max-width: 768px) {
+  #point3 .accordion {
+    width: 90%;
+    margin: 0px auto 70px;
+  }
+}
+#point3 .accordion img {
+  height: 0;
+  visibility: hidden;
+  overflow: hidden;
+  transition: 0.4s;
+}
+#point3 .accordion summary {
+  cursor: pointer;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  position: relative;
+  padding: 2em;
+  background-color: #F2FAFF;
+  color: #000000;
+  font-weight: 600;
+  font-size: 20px;
+  cursor: pointer;
+  border-top: 1px solid #105C8D;
+  border-bottom: 1px solid #105C8D;
+}
+@media (max-width: 768px) {
+  #point3 .accordion summary {
+    padding: 1em;
+    font-size: 18px;
+  }
+}
+#point3 .accordion summary[open] {
+  border-bottom: none;
+}
+#point3 .accordion summary::after {
+  content: "▼";
+  margin-left: 7%;
+  color: #105C8D;
+}
+#point3 .accordion.open img {
+  height: auto;
+  visibility: visible;
+}
+#point3 .accordion.open summary {
+  border-bottom: none;
+}
+#point3 .accordion.open summary::after {
+  content: "▲";
+  color: #105C8D;
+  font-size: 20px;
+}
+
 #cta {
   position: relative;
 }

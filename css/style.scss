@@ -244,6 +244,87 @@ header {
     }
 }
 
+#problem {
+    position: relative;
+    z-index: 2;
+}
+
+#four_point {
+    transform: translateY(-5%);
+
+    @include sp {
+        transform: translateY(-7%);
+    }
+}
+
+#point3 {
+    .accordion {
+        width: 81%;
+        margin: 70px auto 140px;
+        position: relative;
+
+        @include sp {
+            width: 90%;
+            margin: 0px auto 70px;
+        }
+
+        img {
+            height: 0;
+            visibility: hidden;
+            overflow: hidden;
+            transition: 0.4s;
+        }
+
+        summary {
+            cursor: pointer;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            position: relative;
+            padding: 2em;
+            background-color: #F2FAFF;
+            color: #000000;
+            font-weight: 600;
+            font-size: 20px;
+            cursor: pointer;
+            border-top: 1px solid #105C8D;
+            border-bottom: 1px solid #105C8D;
+
+            @include sp {
+                padding: 1em;
+                font-size: 18px;
+            }
+        }
+
+        summary[open] {
+            border-bottom: none;
+        }
+
+        summary::after {
+            content: '▼';
+            margin-left: 7%;
+            color: #105C8D;
+        }
+    }
+
+    .accordion.open {
+        img {
+            height: auto;
+            visibility: visible;
+        }
+
+        summary {
+            border-bottom: none
+        }
+
+        summary::after {
+            content: '▲';
+            color: #105C8D;
+            font-size: 20px;
+        }
+    }
+}
+
 #cta {
     position: relative;
 
