@@ -258,9 +258,10 @@ header {
 }
 
 #point3 {
+
     .accordion {
         width: 81%;
-        margin: 70px auto 140px;
+        margin: 70px auto 0;
         position: relative;
 
         @include sp {

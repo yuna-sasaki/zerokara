@@ -234,7 +234,7 @@ header .header_inner .cta_btn_head:hover {
 
 #point3 .accordion {
   width: 81%;
-  margin: 70px auto 140px;
+  margin: 70px auto 0;
   position: relative;
 }
 @media (max-width: 768px) {
