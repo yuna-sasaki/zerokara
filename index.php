@@ -7,6 +7,7 @@
     <meta name="description" content="超高速凍結機、急速凍結機、液体凍結機、ナトリウム除去装置、凍結製造ライン設計の株式会社ゼロカラ">
     <meta name="keywords" content="超高速凍結機,急速凍結機,液体凍結機,ナトリウム除去装置,凍結製造ライン設計">
     <link rel="stylesheet" href="css/style.css">
+    <script type="text/javascript" src="https://code.jquery.com/jquery-3.1.0.min.js"></script>
     <title>超高速凍結機、急速凍結機、液体凍結機、ナトリウム除去装置、凍結製造ライン設計の株式会社ゼロカラ</title>
 </head>
 
@@ -25,7 +26,7 @@
         </div>
     </header>
 
-    <section id="fv">
+    <section id="fv" class="floating_show">
         <img class="pc" src="img/fv_pc.jpg" alt="">
         <img class="sp" src="img/fv_sp.jpg" alt="">
         <a href="#contact">
@@ -129,7 +130,7 @@
         <img class="sp" src="img/" alt="">
     </section>
 
-    <section id="faq">
+    <section id="faq" class="floating_hide">
         <p class="hiragino-mincho faq_text_01">FAQ</p>
         <p class="notosans faq_text_02">よくある質問</p>
         <details class="accordion-001">
@@ -242,16 +243,48 @@
         </div>
     </section>
 
+    <section id="floating">
+        <div class="floating_banner">
+            <a href="#contact">
+                <img src="img/floating.png" alt="">
+            </a>
+        </div>
+    </section>
+
     <footer>
         <p class="notosans copyright">© ZEROKARA CO.,LTD. All rights reserved.</p>
     </footer>
 
     <script>
+        // アコーディオンjs
         document.querySelectorAll('.accordion').forEach(function(elem) {
             elem.querySelector('summary').addEventListener('click', function() {
                 elem.classList.toggle('open');
             })
         })
+
+        // フローティングバナー表示有無
+        $(function() {
+            $(window).scroll(function() {
+                let scrollTop = jQuery(window).scrollTop(); // スクロール上部の位置
+                let areaTop = jQuery(".floating_hide").offset().top; // 対象エリアの上部の位置
+                let areaTop_fv = jQuery(".floating_show").offset().top; // 対象エリアの上部の位置
+
+                $('.floating_banner').each(function() {
+                    if (scrollTop > areaTop_fv + 300) {
+                        $(this).addClass("is-fixed");
+
+                        if (scrollTop > areaTop  - 200) {
+                            jQuery('.is-fixed').hide();
+                        } else {
+                            jQuery('.is-fixed').show();
+                        }
+                    } else {
+                        jQuery('.is-fixed').hide();
+                    }
+                });
+            });
+        });
     </script>
 
 </body>
