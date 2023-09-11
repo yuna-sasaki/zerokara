@@ -125,11 +125,6 @@
         </a>
     </section>
 
-    <section>
-        <img class="pc" src="img/" alt="">
-        <img class="sp" src="img/" alt="">
-    </section>
-
     <section id="faq" class="floating_hide">
         <p class="hiragino-mincho faq_text_01">FAQ</p>
         <p class="notosans faq_text_02">よくある質問</p>

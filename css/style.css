@@ -270,6 +270,10 @@ header .header_inner .cta_btn_head:hover {
     font-size: 18px;
   }
 }
+#point3 .accordion summary::-webkit-details-marker {
+  /* Safariで表示されるデフォルトの三角形アイコンを消す */
+  display: none;
+}
 #point3 .accordion summary[open] {
   border-bottom: none;
 }
@@ -536,6 +540,11 @@ header .header_inner .cta_btn_head:hover {
   box-sizing: border-box;
   transition: opacity 0.25s ease;
   z-index: 1;
+}
+@media (max-width: 768px) {
+  #contact .contact_inner form .privacypolicy_flex input[type=checkbox] + span:before {
+    top: 0;
+  }
 }
 #contact .contact_inner form .privacypolicy_flex input[type=checkbox]:checked + span::before {
   opacity: 1;

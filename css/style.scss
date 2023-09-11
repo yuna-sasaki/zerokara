@@ -297,6 +297,11 @@ header {
             }
         }
 
+        summary::-webkit-details-marker {
+            /* Safariで表示されるデフォルトの三角形アイコンを消す */
+            display: none;
+        }
+
         summary[open] {
             border-bottom: none;
         }
@@ -602,6 +607,10 @@ header {
                     -webkit-transition: opacity .25s ease;
                     transition: opacity .25s ease;
                     z-index: 1;
+
+                    @include sp {
+                        top: 0;
+                    }
                 }
 
                 input[type=checkbox]:checked+span::before {

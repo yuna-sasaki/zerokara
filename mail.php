@@ -30,15 +30,15 @@ if (version_compare(PHP_VERSION, '5.1.0', '>=')) {//PHP5.1.0以上の場合の�
 //---------------------------　必須設定　必ず設定してください　-----------------------
 
 //サイトのトップページのURL　※デフォルトでは送信完了後に「トップページへ戻る」ボタンが表示されますので
-$site_top = "https://zerokarainc.com//";
+$site_top = "https://zerokarainc.com/";
 
 //管理者のメールアドレス ※メールを受け取るメールアドレス(複数指定する場合は「,」で区切ってください 例 $to = "aa@aa.aa,bb@bb.bb";)
-$to = "sasaki_y@protea-inc.co.jp";
+$to = "zeokara_info@zerokarainc.com";
 
 //送信元メールアドレス（管理者宛て、及びユーザー宛メールの送信元メールアドレスです）
 //必ず実在するメールアドレスでかつ出来る限り設置先サイトのドメインと同じドメインのメールアドレスとすることを強く推奨します
 //管理者宛てメールの返信先（reply）はユーザーのメールアドレスになります。
-$from = "sasaki_y@protea-inc.co.jp";
+$from = "zeokara_info@zerokarainc.com";
 
 //フォームのメールアドレス入力箇所のname属性の値（name="○○"　の○○部分）
 $Email = "メールアドレス";
@@ -69,7 +69,7 @@ $useToken = 1;
 $BccMail = "";
 
 // 管理者宛に送信されるメールのタイトル（件名）
-$subject = "ホームページのお問い合わせ";
+$subject = "ホームページからのお問い合わせ";
 
 // 送信確認画面の表示(する=1, しない=0)
 $confirmDsp = 1;
@@ -103,7 +103,7 @@ $remail = 1;
 $refrom_name = "";
 
 // 差出人に送信確認メールを送る場合のメールのタイトル（上記で1を設定した場合のみ）
-$re_subject = "お問い合わせありがとうございます";
+$re_subject = "【ゼロカラ】お問い合わせ受付のお知らせ";
 
 //フォーム側の「名前」箇所のname属性の値　※自動返信メールの「○○様」の表示で使用します。
 //指定しない、または存在しない場合は、○○様と表示されないだけです。あえて無効にしてもOK
@@ -112,19 +112,20 @@ $dsp_name = "氏名";
 //自動返信メールの冒頭の文言 ※日本語部分のみ変更可
 $remail_text = <<< TEXT
 
-この度は、お問い合わせいただき誠にありがとうございます。
+お世話になっております。
+株式会社ゼロカラでございます。
 
-以下の内容のお問い合わせを受け付けました。
-３～５営業日以内に担当者より折り返しご連絡させていただきます。
+以下の内容でお問い合わせを受付いたしました。
+改めて、担当よりご連絡をさせていただきます。
 
-尚、お問い合わせ内容によっては、ご返事までにお時間をいただく場合もございます。
-あらかじめご了承ください。
+ご理解・ご了承の程よろしくお願い致します。
+
 
 TEXT;
 
 
 //自動返信メールに署名（フッター）を表示(する=1, しない=0)※管理者宛にも表示されます。
-$mailFooterDsp = 1;
+$mailFooterDsp = 0;
 
 //上記で「1」を選択時に表示する署名（フッター）（FOOTER～FOOTER;の間に記述してください）
 $mailSignature = <<< FOOTER
@@ -255,26 +256,6 @@ else if($confirmDsp == 1){
 <!DOCTYPE HTML>
 <html lang="ja">
 <head>
-    <!-- Google Tag Manager -->
-    <script>(function(w,d,s,l,i){w[l]=w[l]||[];w[l].push({'gtm.start':
-    new Date().getTime(),event:'gtm.js'});var f=d.getElementsByTagName(s)[0],
-    j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
-    'https://www.googletagmanager.com/gtm.js?id='+i+dl;f.parentNode.insertBefore(j,f);
-    })(window,document,'script','dataLayer','GTM-M9LSFCF');</script>
-    <!-- End Google Tag Manager -->
-    <!-- Global site tag (gtag.js) - Google Analytics -->
-    <script async src="https://www.googletagmanager.com/gtag/js?id=UA-61253941-9"></script>
-    <script>
-        window.dataLayer = window.dataLayer || [];
-
-        function gtag() {
-            dataLayer.push(arguments);
-        }
-        gtag('js', new Date());
-
-        gtag('config', 'UA-61253941-9');
-    </script>
-    <!-- End Global site tag (gtag.js) - Google Analytics -->
 
 <meta charset="utf-8">
 <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no" />
@@ -416,11 +397,6 @@ else if($confirmDsp == 1){
 </header>
 
 <body>
-<!-- Google Tag Manager (noscript) -->
-<noscript><iframe src="https://www.googletagmanager.com/ns.html?id=GTM-M9LSFCF"
-height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
-<!-- End Google Tag Manager (noscript) -->
-
 <!-- ▲ Headerやその他コンテンツなど　※自由に編集可 ▲-->
 
 <!-- ▼************ 送信内容表示部　※編集は自己責任で ************ ▼-->
@@ -465,28 +441,6 @@ if(($jumpPage == 0 && $sendmail == 1) || ($jumpPage == 0 && ($confirmDsp == 0 &&
 <!DOCTYPE HTML>
 <html lang="ja">
 <head>
-	<!-- Google Tag Manager -->
-    <script>(function(w,d,s,l,i){w[l]=w[l]||[];w[l].push({'gtm.start':
-    new Date().getTime(),event:'gtm.js'});var f=d.getElementsByTagName(s)[0],
-    j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
-    'https://www.googletagmanager.com/gtm.js?id='+i+dl;f.parentNode.insertBefore(j,f);
-    })(window,document,'script','dataLayer','GTM-M9LSFCF');</script>
-    <!-- End Google Tag Manager -->
-	
-    <!-- Global site tag (gtag.js) - Google Analytics -->
-    <script async src="https://www.googletagmanager.com/gtag/js?id=UA-61253941-9"></script>
-    <script>
-        window.dataLayer = window.dataLayer || [];
-
-        function gtag() {
-            dataLayer.push(arguments);
-        }
-        gtag('js', new Date());
-
-        gtag('config', 'UA-61253941-9');
-    </script>
-    <!-- End Global site tag (gtag.js) - Google Analytics -->
-
 <meta charset="utf-8">
 <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no" />
 <meta name="format-detection" content="telephone=no">
@@ -567,11 +521,6 @@ if(($jumpPage == 0 && $sendmail == 1) || ($jumpPage == 0 && ($confirmDsp == 0 &&
 </header>
 
 <body>
-<!-- Google Tag Manager (noscript) -->
-<noscript><iframe src="https://www.googletagmanager.com/ns.html?id=GTM-M9LSFCF"
-height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
-<!-- End Google Tag Manager (noscript) -->
-
 <div align="center">
 <?php if($empty_flag == 1){ ?>
 <h4>入力にエラーがあります。下記をご確認の上「戻る」ボタンにて修正をお願い致します。</h4>
@@ -752,7 +701,7 @@ function adminHeader($post_mail,$BccMail){
 }
 //管理者宛送信メールボディ
 function mailToAdmin($arr,$subject,$mailFooterDsp,$mailSignature,$encode,$confirmDsp){
-	$adminBody="「".$subject."」からメールが届きました\n\n";
+	$adminBody="ゼロカラ".$subject."\n\n";
 	$adminBody .="＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝\n\n";
 	$adminBody.= postToMail($arr);//POSTデータを関数からセット
 	$adminBody.="\n＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝\n";
