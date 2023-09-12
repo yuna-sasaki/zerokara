@@ -165,6 +165,11 @@ header .header_inner {
     padding-left: 20px;
   }
 }
+@media (max-width: 768px) {
+  header .header_inner {
+    padding-right: 0;
+  }
+}
 header .header_inner .logo_pc {
   height: 75px;
 }
@@ -175,14 +180,12 @@ header .header_inner .logo_pc:hover,
 header .header_inner .logo_sp:hover {
   opacity: 0.5;
 }
+header .header_inner .floating_sp {
+  height: 59px;
+}
 header .header_inner .cta_btn_head {
   width: 254px;
   transition: 0.3s;
-}
-@media (max-width: 768px) {
-  header .header_inner .cta_btn_head {
-    width: 176px;
-  }
 }
 header .header_inner .cta_btn_head:hover {
   box-shadow: 0 15px 30px -5px rgba(0, 0, 0, 0.15), 0 0 5px rgba(0, 0, 0, 0.1);

@@ -20,7 +20,10 @@
             <a class="pc" href="#">
                 <img class="logo_pc" src="img/logo_pc.png" alt="">
             </a>
-            <a href="#contact">
+            <a class="sp" href="#contact">
+                <img class="floating_sp" src="img/floating_sp.png" alt="">
+            </a>
+            <a class="pc" href="#contact">
                 <img class="cta_btn_head" src="img/cta_btn_head.png" alt="">
             </a>
         </div>
@@ -238,7 +241,7 @@
         </div>
     </section>
 
-    <section id="floating">
+    <section id="floating" class="pc">
         <div class="floating_banner">
             <a href="#contact">
                 <img src="img/floating.png" alt="">

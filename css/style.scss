@@ -186,6 +186,10 @@ header {
             padding-left: 20px;
         }
 
+        @include sp {
+            padding-right: 0;
+        }
+
         .logo_pc {
             height: 75px;
         }
@@ -199,13 +203,13 @@ header {
             opacity: 0.5;
         }
 
+        .floating_sp {
+            height: 59px;
+        }
+
         .cta_btn_head {
             width: 254px;
             transition: .3s;
-
-            @include sp {
-                width: 176px;
-            }
         }
 
         .cta_btn_head:hover {
