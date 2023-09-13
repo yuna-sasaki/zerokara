@@ -2,6 +2,24 @@
 <html lang="ja">
 
 <head>
+    <!-- Google Tag Manager -->
+    <script>
+        (function(w, d, s, l, i) {
+            w[l] = w[l] || [];
+            w[l].push({
+                'gtm.start': new Date().getTime(),
+                event: 'gtm.js'
+            });
+            var f = d.getElementsByTagName(s)[0],
+                j = d.createElement(s),
+                dl = l != 'dataLayer' ? '&l=' + l : '';
+            j.async = true;
+            j.src =
+                'https://www.googletagmanager.com/gtm.js?id=' + i + dl;
+            f.parentNode.insertBefore(j, f);
+        })(window, document, 'script', 'dataLayer', 'GTM-N9CDWK5');
+    </script>
+    <!-- End Google Tag Manager -->
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta name="description" content="超高速凍結機、急速凍結機、液体凍結機、ナトリウム除去装置、凍結製造ライン設計の株式会社ゼロカラ">
@@ -12,6 +30,10 @@
 </head>
 
 <body>
+    <!-- Google Tag Manager (noscript) -->
+    <noscript><iframe src="https://www.googletagmanager.com/ns.html?id=GTM-N9CDWK5" height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
+    <!-- End Google Tag Manager (noscript) -->
+    
     <header>
         <div class="header_inner">
             <a class="sp" href="#">
@@ -272,7 +294,7 @@
                     if (scrollTop > areaTop_fv + 300) {
                         $(this).addClass("is-fixed");
 
-                        if (scrollTop > areaTop  - 200) {
+                        if (scrollTop > areaTop - 200) {
                             jQuery('.is-fixed').hide();
                         } else {
                             jQuery('.is-fixed').show();
