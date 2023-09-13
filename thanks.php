@@ -17,22 +17,9 @@
             j.src =
                 'https://www.googletagmanager.com/gtm.js?id=' + i + dl;
             f.parentNode.insertBefore(j, f);
-        })(window, document, 'script', 'dataLayer', 'GTM-M9LSFCF');
+        })(window, document, 'script', 'dataLayer', 'GTM-N9CDWK5');
     </script>
     <!-- End Google Tag Manager -->
-    <!-- Global site tag (gtag.js) - Google Analytics -->
-    <script async src="https://www.googletagmanager.com/gtag/js?id=UA-61253941-9"></script>
-    <script>
-        window.dataLayer = window.dataLayer || [];
-
-        function gtag() {
-            dataLayer.push(arguments);
-        }
-        gtag('js', new Date());
-
-        gtag('config', 'UA-61253941-9');
-    </script>
-    <!-- End Global site tag (gtag.js) - Google Analytics -->
 
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no" />
@@ -40,7 +27,7 @@
     <title>完了画面</title>
 
     <style type="text/css">
-    /* レスポンシブ表示非表示切り替え */
+        /* レスポンシブ表示非表示切り替え */
         @media (max-width: 768px) {
             .pc {
                 display: none;
@@ -52,7 +39,8 @@
                 display: none;
             }
         }
-    /* bodyCSS */
+
+        /* bodyCSS */
         .text {
             text-align: center;
             padding-top: 75px;
@@ -60,16 +48,18 @@
         }
 
         @media (max-width: 980px) {
-        .text {
-            padding-top: 59px;
-            margin: 50% auto 90%;
+            .text {
+                padding-top: 59px;
+                margin: 50% auto 90%;
+            }
         }
-        }
-    /* ヘッダーCSS */
+
+        /* ヘッダーCSS */
         body {
             margin: 0;
             position: relative;
         }
+
         header {
             background: rgb(0, 0, 0);
             background: linear-gradient(90deg, rgb(0, 0, 0) 31%, rgb(5, 127, 174) 100%);
@@ -110,12 +100,12 @@
         }
 
         header .header_inner .logo_pc:hover,
-	    header .header_inner .logo_sp:hover {
+        header .header_inner .logo_sp:hover {
             opacity: 0.5;
         }
 
 
-    /* フッター */
+        /* フッター */
         footer {
             background-color: #105C8D;
             height: 75px;
@@ -125,6 +115,7 @@
             align-items: center;
             width: 100%;
         }
+
         footer .copyright {
             color: #fff;
             font-weight: 400;
@@ -134,7 +125,7 @@
 
 <body>
     <!-- Google Tag Manager (noscript) -->
-    <noscript><iframe src="https://www.googletagmanager.com/ns.html?id=GTM-M9LSFCF" height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
+    <noscript><iframe src="https://www.googletagmanager.com/ns.html?id=GTM-N9CDWK5" height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
     <!-- End Google Tag Manager (noscript) -->
 
     <!-- ヘッダー -->
