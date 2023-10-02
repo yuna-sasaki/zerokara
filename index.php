@@ -43,10 +43,10 @@
                 <img class="logo_pc" src="img/logo_pc.png" alt="">
             </a>
             <a class="sp" href="#contact">
-                <img class="floating_sp" src="img/floating_sp.png" alt="">
+                <img class="floating_sp" src="img/floating_sp.png" alt="headercta">
             </a>
             <a class="pc" href="#contact">
-                <img class="cta_btn_head" src="img/cta_btn_head.png" alt="">
+                <img class="cta_btn_head" src="img/cta_btn_head.png" alt="headercta">
             </a>
         </div>
     </header>
@@ -55,7 +55,7 @@
         <img class="pc" src="img/fv_pc.jpg" alt="">
         <img class="sp" src="img/fv_sp.jpg" alt="">
         <a href="#contact">
-            <img class="cta_btn" src="img/cta_btn.png" alt="">
+            <img class="cta_btn" src="img/cta_btn.png" alt="fvcta">
         </a>
     </section>
 
@@ -114,7 +114,7 @@
         <img class="pc" src="img/cta_pc.jpg" alt="">
         <img class="sp" src="img/cta_sp.jpg" alt="">
         <a href="#contact">
-            <img class="cta_btn" src="img/cta_btn.png" alt="">
+            <img class="cta_btn" src="img/cta_btn.png" alt="cta01">
         </a>
     </section>
 
@@ -146,7 +146,7 @@
         <img class="pc" src="img/cta_pc.jpg" alt="">
         <img class="sp" src="img/cta_sp.jpg" alt="">
         <a href="#contact">
-            <img class="cta_btn" src="img/cta_btn.png" alt="">
+            <img class="cta_btn" src="img/cta_btn.png" alt="cta02">
         </a>
     </section>
 
@@ -266,7 +266,7 @@
     <section id="floating" class="pc">
         <div class="floating_banner">
             <a href="#contact">
-                <img src="img/floating.png" alt="">
+                <img src="img/floating.png" alt="floatingcta">
             </a>
         </div>
     </section>
