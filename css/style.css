@@ -67,6 +67,12 @@ h6 {
 section {
   overflow: hidden;
 }
+@media (min-width: 414px) {
+  section {
+    width: 80%;
+    margin: 0 auto;
+  }
+}
 
 li {
   list-style-type: none;
@@ -407,16 +413,21 @@ header .header_inner .cta_btn_head:hover {
 
 #contact {
   background-color: #F2FAFF;
+  padding: 65px 20px;
+}
+@media (max-width: 768px) {
+  #contact {
+    padding: 25px auto;
+  }
 }
 #contact .contact_inner {
   max-width: 725px;
-  margin: 65px auto;
   text-align: center;
+  margin: 0 auto;
 }
 @media (max-width: 768px) {
   #contact .contact_inner {
     width: 90%;
-    margin: 25px auto;
   }
 }
 #contact .contact_inner .sec_ttl h3 {

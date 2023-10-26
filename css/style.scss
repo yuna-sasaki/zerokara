@@ -80,6 +80,11 @@ h6 {
 
 section {
     overflow: hidden;
+
+    @media (min-width: 414px) {
+        width: 80%;
+        margin: 0 auto;
+    }
 }
 
 li {
@@ -457,15 +462,21 @@ header {
 
 #contact {
     background-color: #F2FAFF;
+    padding: 65px 20px;
+
+    @include sp {
+        padding: 25px auto;
+    }
 
     .contact_inner {
         max-width: 725px;
-        margin: 65px auto;
+        // margin: 65px 20px;
         text-align: center;
+        margin: 0 auto;
 
         @include sp {
             width: 90%;
-            margin: 25px auto;
+            // margin: 25px auto;
         }
 
         .sec_ttl {
