@@ -59,10 +59,30 @@
         </a>
     </section>
 
+    <section>
+        <img class="pc" src="img/achievements_pc.jpg" alt="">
+        <img class="sp" src="img/achievements_sp.jpg" alt="">
+    </section>
+
     <section id="problem">
         <img class="pc" src="img/problem_pc.png" alt="">
         <img class="sp" src="img/problem_sp.png" alt="">
     </section>
+
+    <section>
+        <img class="pc" src="img/caseStudy_top_pc.jpg" alt="">
+        <img class="sp" src="img/caseStudy_top_sp.jpg" alt="">
+
+        <img class="pc" src="img/caseStudy_1_pc.jpg" alt="">
+        <img class="sp" src="img/caseStudy_1_sp.jpg" alt="">
+
+        <img class="pc" src="img/caseStudy_2_pc.jpg" alt="">
+        <img class="sp" src="img/caseStudy_2_sp.jpg" alt="">
+
+        <img class="pc" src="img/caseStudy_3_pc.jpg" alt="">
+        <img class="sp" src="img/caseStudy_3_sp.jpg" alt="">
+    </section>
+
 
     <section id="four_point">
         <img class="pc" src="img/four_point_pc.jpg" alt="">
@@ -92,7 +112,7 @@
         <img class="pc" src="img/point3_2_pc.jpg" alt="">
         <img class="sp" src="img/point3_2_sp.jpg" alt="">
 
-        <img class="pc" src="img/point3_3_pc.jpg" alt="">
+        <!-- <img class="pc" src="img/point3_3_pc.jpg" alt="">
         <img class="sp" src="img/point3_3_sp.jpg" alt="">
 
         <details class="accordion pc">
@@ -102,12 +122,17 @@
         <details class="accordion sp">
             <summary>商品特徴を詳しく見る</summary>
             <img src="img/point3_accordion_bottom_sp.jpg" alt="">
-        </details>
+        </details> -->
     </section>
 
     <section>
         <img class="pc" src="img/point4_pc.jpg" alt="">
         <img class="sp" src="img/point4_sp.jpg" alt="">
+    </section>
+
+    <section>
+        <img class="pc" src="img/flow_pc.jpg" alt="">
+        <img class="sp" src="img/flow_sp.jpg" alt="">
     </section>
 
     <section id="cta">
@@ -116,20 +141,6 @@
         <a href="#contact">
             <img class="cta_btn" src="img/cta_btn.png" alt="cta01">
         </a>
-    </section>
-
-    <section>
-        <img class="pc" src="img/caseStudy_top_pc.jpg" alt="">
-        <img class="sp" src="img/caseStudy_top_sp.jpg" alt="">
-
-        <img class="pc" src="img/caseStudy_1_pc.jpg" alt="">
-        <img class="sp" src="img/caseStudy_1_sp.jpg" alt="">
-
-        <img class="pc" src="img/caseStudy_2_pc.jpg" alt="">
-        <img class="sp" src="img/caseStudy_2_sp.jpg" alt="">
-
-        <img class="pc" src="img/caseStudy_3_pc.jpg" alt="">
-        <img class="sp" src="img/caseStudy_3_sp.jpg" alt="">
     </section>
 
     <section>
