@@ -70,6 +70,11 @@
     </section>
 
     <section>
+        <img class="pc" src="img/solution_pc.jpg" alt="">
+        <img class="sp" src="img/solution_sp.jpg" alt="">
+    </section>
+
+    <section>
         <img class="pc" src="img/caseStudy_top_pc.jpg" alt="">
         <img class="sp" src="img/caseStudy_top_sp.jpg" alt="">
 
